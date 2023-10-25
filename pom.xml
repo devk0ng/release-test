@@ -15,12 +15,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>2.4.4</version>
+            <version>2.7.17</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
-            <version>2.4.4</version>
+            <version>2.7.17</version>
         </dependency>
     </dependencies>
 
@@ -42,6 +42,12 @@
                         <pushHotfixes>true</pushHotfixes>
                         <releaseBranchVersionSuffix>RC</releaseBranchVersionSuffix>
                         <allowSnapshots>true</allowSnapshots>
+                        <flowInitContext>
+                            <masterBranchName>master-v2</masterBranchName>
+                            <developBranchName>develop-v2</developBranchName>
+                            <releaseBranchPrefix>v2-</releaseBranchPrefix>
+                            <versionTagPrefix>version2-</versionTagPrefix>
+                        </flowInitContext>
                         <!-- maven install goal instead of deploy goal. no need to deploy to maven repository -->
                         <noDeploy>true</noDeploy>
                         <allowUntracked>true</allowUntracked>
